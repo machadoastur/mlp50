@@ -4,19 +4,83 @@
     <meta charset="UTF-8">
     <title>¡Me lo Pido v5.0!</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
 </head>
 <body>
    <header class="cabezazo">
        <h1 class="saludo">¡Bienvenido a mi página!</h1>
         <h3 class="explica">Gracias por visitarme. Si quieres hacerme algún regalo, en esta página encontrarás algunos de los objetos que me interesan</h3>
-       <p class="font-italic text-white">Google me obliga a incluir un formulario de entrada con vuestro email. Yo no quería...</p>
+       <!-- <p class="font-italic text-white">Google me obliga a incluir un formulario de entrada con vuestro email. Yo no quería...</p> -->
    </header>
-   <button id="btn1">¡Pincha!</button>
-    <div id="tablero"></div>
-    <h1 class="animate__animated animate__flash">An animated element</h1>
+   <!-- formulario adaptable-->
+   
+	<section id="container">
+		<p class="excusatio">Google me obliga a incluir un formulario de entrada con vuestro email. Yo no quería...</p>
+		<!-- <span class="chyron"><em><a href="http://www.hongkiat.com/blog/">&laquo; back to the site</a></em></span> -->
+		<h2></h2>
+		<form name="hongkiat" id="hongkiat-form" method="post" action="#">
+		<div id="wrapping" class="clearfix">
+			<section id="aligned">
+			<!-- <input type="text" name="name" id="name" placeholder="Your name" autocomplete="off" tabindex="1" class="txtinput"> -->
+		
+			<input type="email" name="email" id="email" placeholder="Tu correo electrónico" autocomplete="off" tabindex="2" class="txtinput">
+		
+			<input type="url" name="password" id="password" placeholder="Tu contraseña" autocomplete="off" tabindex="3" class="txtinput">
+		
+			<!-- <input type="tel" name="telephone" id="telephone" placeholder="Phone number?(optional)" tabindex="4" class="txtinput"> -->
+		
+			<textarea name="message" id="message" placeholder="Enter a cool message..." tabindex="5" class="txtblock"></textarea>
+			</section>
+			
+			<!-- <section id="aside" class="clearfix">
+				<section id="recipientcase">
+				<h3>Recipient:</h3>
+					<select id="recipient" name="recipient" tabindex="6" class="selmenu">
+  						<option value="staff">Site Staff</option>
+  						<option value="editor">Editor-in-Chief</option>
+  						<option value="technical">Tech Department</option>
+  						<option value="pr">Public Relations</option>
+  						<option value="support">General Support</option>
+					</select>
+				</section> -->
+				
+				<!-- <section id="prioritycase">
+					<h3>Priority:</h3>
+					<span class="radiobadge">
+						<input type="radio" id="low" name="priority" value="low">
+						<label for="low">Low</label>
+					</span>
+				
+					<span class="radiobadge">
+						<input type="radio" id="med" name="priority" value="med" checked="checked">
+						<label for="med">Medium</label>
+					</span>
+				
+					<span class="radiobadge">
+						<input type="radio" id="high" name="priority" value="high">
+						<label for="high">High</label>
+					</span>
+				</section> -->
+			</section>
+		</div>
 
 
+		<section id="buttons">
+			<input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset">
+			<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit this!">
+			<br style="clear:both;">
+		</section>
+		</form>
+	</section>
+
+
+
+
+      <img src="dibus/3556531-capado.png" alt="Cajitas de regalo" class="cajitas">
+  
     <!-- Scripts -->
     <!-- Monadas-->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>

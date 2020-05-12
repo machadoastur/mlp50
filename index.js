@@ -13,3 +13,5 @@ var tablero = document.getElementById('tablero');
     console.log('Mira a ver');
 }
 btn1.addEventListener('click', presente);
+
+//formulario
