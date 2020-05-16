@@ -16,32 +16,32 @@ body {
 
 }
 
-
-.cabezazo{
+@media all and (orientation: portrait){
+  .cabezazo{
     width: 80vw;
     margin-left: 7vw;
     padding: 20px;
-    /* background: #FFEEEE;  /* fallback for old browsers */
-/*background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE); */ /* Chrome 10-25, Safari 5.1-6 */
-/*background: linear-gradient(to right, #DDEFBB, #FFEEEE); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  
     
 }
 
 .saludo{
     text-align: center;
-    font-size: 4.5em;
+    font-size: 6em;
     font-style: italic;
     color:#490904;
     font-family: 'Montserrat', sans-serif;
     
 }
-
 .explica{
-    font-size: 1.5em;
-    color:#490904;
-    font-weight:bolder;
+  font-size: 2.5em;
+  color:#490904;
+  font-weight:bolder;
 }
+
+}
+
+
 
 
 .cajitas{
@@ -64,7 +64,7 @@ body {
     box-sizing: border-box;
   }
   
-  input[type=text], select, textarea {
+  input, select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -115,6 +115,24 @@ body {
     display: table;
     clear: both;
   }
+  ::-webkit-input-placeholder {
+    color: rgb( 44, 46, 255 );
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: bold;
+    }
+    ::-moz-placeholder {
+    color: rgb( 44, 46, 255 );
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: bold;
+    }
+    :-ms-input-placeholder {
+    color: rgb( 44, 46, 255 );
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: bold;
+    }
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
@@ -125,11 +143,45 @@ body {
   }
 
 
+
   /*Orientación de la pantalla*/
   @media all and (orientation: landscape){
     html{
-        background-color: pink;
+        
     }
+    .cabezazo{
+      width: 80vw;
+      margin-left: 7vw;
+      padding: 20px;
+    }
+    .explica{
+      font-size: 1.5em;
+      color:#490904;
+      font-weight:bolder;
+    }
+
+    .saludo{
+      text-align: center;
+      font-size: 3em;
+      font-style: italic;
+      color:#490904;
+      font-family: 'Montserrat', sans-serif;
+      
+  }
+  .btn{
+    margin-left: 25vw;
+    height: 6vh;
+    width: 15vw;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #f5c30a ;
+    color:#490904;
+    font-weight: 500;
+    font-size: 1em;
+}
     .cajitas{
         position: fixed;
         width: 80vw;
@@ -138,9 +190,7 @@ body {
         bottom: 0.5em;
     }
  
-    .cabezazo{
-        padding-right: 1.5em;
-    }
+
   }
 
   @media all and (orientation: portrait){
@@ -148,7 +198,46 @@ body {
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 20px;
-        font-size: 2em;
-        margin-top: 20vh;
+        font-size: 2.5em;
+        margin-top: 5vh;
       }
+      input, select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: horizontal;
+      }
+      ::-webkit-input-placeholder {
+        color: rgb( 44, 46, 255 );
+        font-family: Arial;
+        font-size: 32px;
+        font-weight: bold;
+        }
+        ::-moz-placeholder {
+        color: rgb( 44, 46, 255 );
+        font-family: Arial;
+        font-size: 32px;
+        font-weight: bold;
+        }
+        :-ms-input-placeholder {
+        color: rgb( 44, 46, 255 );
+        font-family: Arial;
+        font-size: 32px;
+        font-weight: bold;
+        }
+        .btn{
+          margin-left: 25vw;
+          height: 3vh;
+          width: 20vw;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          background-color: #f5c30a ;
+          color:#490904;
+          font-weight: 500;
+          font-size: 1em;
+}
   }
