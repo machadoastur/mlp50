@@ -189,7 +189,9 @@ body {
         margin-left: 5vw;
         bottom: 0.5em;
     }
- 
+ footer{
+  visibility: hidden;
+}
 
   }
 
