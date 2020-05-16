@@ -33,10 +33,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     
 }
-.explica{
+.explicatio{
   font-size: 2.5em;
   color:#490904;
   font-weight:bolder;
+  letter-spacing: 1pt
 }
 
 }
@@ -146,27 +147,29 @@ body {
 
   /*Orientación de la pantalla*/
   @media all and (orientation: landscape){
-    html{
+    body{
         
     }
     .cabezazo{
       width: 80vw;
       margin-left: 7vw;
-      padding: 20px;
+      padding: 10px;
     }
-    .explica{
-      font-size: 1.5em;
-      color:#490904;
-      font-weight:bolder;
-    }
+
 
     .saludo{
       text-align: center;
-      font-size: 3em;
+      font-size: 2.5em;
       font-style: italic;
       color:#490904;
       font-family: 'Montserrat', sans-serif;
       
+  }
+  .explicatio{
+    font-size: 1em;
+    color:#490904;
+    font-weight:bolder;
+    letter-spacing: 1pt;
   }
   .btn{
     margin-left: 25vw;
@@ -189,11 +192,11 @@ body {
         margin-left: 5vw;
         bottom: 0.5em;
     }
- footer{
+ 
+footer{
   visibility: hidden;
 }
-
-  }
+  }  /*landscape*/
 
   @media all and (orientation: portrait){
     .container {
