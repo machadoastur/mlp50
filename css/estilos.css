@@ -15,7 +15,7 @@ background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, F
 }
 main{
     color: darkred;
-     width: 100vw;
+    width: 100vw;
     height: 60vh;
 }
 main h1{
@@ -96,17 +96,17 @@ main h1{
 @media (max-width: 1300px) and (orientation: portrait) {
     main h1{
     text-align: center;
-    font-size: 6em;
+    font-size: 3.5em;
     font-style: italic;
     font-weight: 800;
-    margin-top: 3vh;
-        padding: 2px<,
+    margin-top: 1vh;
+        padding: 2px,
 }
     .hero-description{
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 80vw;
     margin: auto;
-    margin-top: 4vh;
+    margin-top: 1.5vh;
     
 }
     .form-container{
@@ -127,16 +127,16 @@ main h1{
 @media (min-width: 1300px) and (orientation: landscape) {
     main h1{
     text-align: center;
-    font-size: 6em;
+    font-size: 3em;
     font-style: italic;
     font-weight: 800;
-    margin-top: 3vh;
+    margin-top: 1vh;
 }
     .hero-description{
     font-size: 1em;
     width: 80vw;
     margin: auto;
-    margin-top: 4vh;
+    margin-top: 1vh;
     
 }
     #lafurgo{
