@@ -110,7 +110,7 @@ main h1{
     
 }
     .form-container{
-    font-size: 1.8em;
+    font-size: 1em;
 }
 .form-container p{
     font-size: 1em;
@@ -138,6 +138,9 @@ main h1{
     margin: auto;
     margin-top: 1vh;
     
+}
+        .form-container{
+    font-size: 0.8em;
 }
     #lafurgo{
 /*    width: 35vw;*/
