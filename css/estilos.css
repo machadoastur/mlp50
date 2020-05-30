@@ -15,6 +15,8 @@ background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, F
 }
 main{
     color: darkred;
+     width: 100vw;
+    height: 60vh;
 }
 main h1{
     text-align: center;
