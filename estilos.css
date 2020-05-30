@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+background: #FDC830;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   
+}
+main{
+    color: darkred;
+    width: 100vw;
+    height: 60vh;
+}
+main h1{
+    text-align: center;
+    font-size: 4em;
+    font-style: italic;
+    font-weight: 800;
+    margin-top: 3vh;
+}
+.hero-description{
+    font-size: 1.5em;
+    width: 80vw;
+    margin: auto;
+    margin-top: 4vh;
+    
+}
+
+.appInfo{
+    text-align: center;
+    width: 80vw;
+    height: 50vh;
+    margin: auto;
+    margin-top: 4vh;
+    
+}
+
+.form-container{
+    font-size: 1.3em;
+}
+.form-container p{
+    font-size: 1.3em;
+}
+.loginform{
+    height: 25vh;
+}
+.input{
+    height: 4vh;
+}
+*::-webkit-input-placeholder {
+    /* Google Chrome y Safari */
+    color: red;
+    font-size: 1.5em;
+}
+*:-moz-placeholder {
+    /* Firefox anterior a 19 */
+    color: red;
+     font-size: 1.5em;
+}
+*::-moz-placeholder {
+    /* Firefox 19 y superior */
+    color: red;
+     font-size: 1.5em;
+}
+*:-ms-input-placeholder {
+    /* Internet Explorer 10 y superior */
+    color: red;
+     font-size: 1.5em;
+}
+
+.button{
+    width: 20vw;
+    font-size: 1.3em;
+    font-style: oblique;
+}
+
+.refurgo{
+   height: 20vh;
+    margin-left: 5%;
+    margin-top: 3vh;
+}
+.minifurgo{
+   height: 15vh;
+    margin-left: 5%;
+    margin-top: 3vh;
+}
+
+
+@media (max-width: 1300px) and (orientation: portrait) {
+    main h1{
+    text-align: center;
+    font-size: 3.5em;
+    font-style: italic;
+    font-weight: 800;
+    margin-top: 1vh;
+        padding: 2px,
+}
+    .hero-description{
+    font-size: 1.2em;
+    width: 80vw;
+    margin: auto;
+    margin-top: 1.5vh;
+    
+}
+    .form-container{
+    font-size: 1.8em;
+}
+.form-container p{
+    font-size: 1em;
+}
+.refurgo{
+   height: 20vh;
+    margin-left: 5%;;
+  
+    margin-bottom: 30vh;
+}
+ 
+    }
+
+@media (min-width: 1300px) and (orientation: landscape) {
+    main h1{
+    text-align: center;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: 800;
+    margin-top: 1vh;
+}
+    .hero-description{
+    font-size: 1em;
+    width: 80vw;
+    margin: auto;
+    margin-top: 1vh;
+    
+}
+    #lafurgo{
+/*    width: 35vw;*/
+   
+    margin: auto;
+    margin-bottom: 5vh;
+}
+     #lafurgo img{
+        height: 25vh;
+        width: auto;
+        margin-bottom: 1vh;
+    }
+    
+    }
