@@ -1,79 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <title>Probando maquetación
-        
-    </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>¡Me lo pido 5.0!</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+<link rel="stylesheet" href="js/animate.css">
 </head>
 <body>
-    <main role="application">
-        <header class="hero">
-          <article class="hero-info">
-            <h1 class="hero-title animate__animated animate__backInDown">
-            ¡Gracias por visitar mi página!
-            </h1>
-            <p class="hero-description animate__animated animate__backInDown animate__delay-1s">
-           Si queréis obsequiarme con algún regalo, aquí os muestro algunos objetos que me han llamado la atención.
-            </p>
-           
-          </article>
-        </header>
-    
-        <section class="appInfo animate__animated animate__backInRight animate__delay-2s">
-          <article class="privateInfo">
-    <!--        <h2 class="privateInfo-title">Información Privada y delicada 🤐</h2>-->
-            
-            <div id="loginFormUI" class="form-container">
-              <p>Google me exige que inicies sesión. Yo no quería🖖...</p>
-    
-              <form class="loginForm" name="loginForm">
-                <input
-                  class="input"
-                  type="email"
-                  name="email"
-                  placeholder="Correo Electronico"
-                  required
-                />
-                <input
-                  class="input"
-                  type="password"
-                  name="password"
-                  placeholder="Contraseña"
-                  required
-                />
-    
-                <div class="form-radioContainer">
-                  <input type="radio" name="isLoginOrSignup" id="radioIsLogin" value="isLogin" checked />
-                  <label for="radioIsLogin">Ya has estado.</label>
-    
-                  <input type="radio" name="isLoginOrSignup" id="radioIsSignup" value="isSignup" />
-                  <label for="radioIsSignup">No has estado nunca</label>
-                </div>
-    
-                <button id="btnLogin" class="button">Inicia la sesión</button>
-              </form>
-              <img src="./dibus/cajaret.png" alt="Furgo con regalos" class="refurgo" >
+
+
+  <main role="application">
+    <header class="hero">
+      <article class="hero-info">
+        <h1 class="hero-title animate__animated animate__backInDown">
+        ¡Gracias por visitar mi página!
+        </h1>
+        <p class="hero-description">
+       Si queréis obsequiarme con algún regalo, aquí os muestro algunos objetos que me han llamado la atención.
+        </p>
+       
+      </article>
+    </header>
+
+    <section class="appInfo animate__animated animate__backInRight">
+      <article class="privateInfo">
+<!--        <h2 class="privateInfo-title">Información Privada y delicada 🤐</h2>-->
+        
+        <div id="loginFormUI" class="form-container">
+          <p>google me exige que inicies sesión. Yo no quería🖖...</p>
+
+          <form class="loginForm" name="loginForm">
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Correo Electronico"
+              required
+            />
+            <input
+              class="input"
+              type="password"
+              name="password"
+              placeholder="Contraseña"
+              required
+            />
+
+            <div class="form-radioContainer">
+              <input type="radio" name="isLoginOrSignup" id="radioIsLogin" value="isLogin" checked />
+              <label for="radioIsLogin">Ya has estado.</label>
+
+              <input type="radio" name="isLoginOrSignup" id="radioIsSignup" value="isSignup" />
+              <label for="radioIsSignup">No has estado nunca</label>
             </div>
-    
+
+            <button id="btnLogin" class="button">Iniciar sesión</button>
+          </form>
+        </div>
+
+        <div id="hiddenPrivateInfo">
+          <p class="loading">Cargando...</p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
 <!--
-            <div id="hiddenPrivateInfo">
-              <p class="loading">Cargando...</p>
-            </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">
+        Este proyecto NO es esponsoreado por Platso™ bajo la suma de 37 plastovillarolocoins, equivalente a 💲1 moneda(s) estafadunizonsa 💵.
+      </p>
+      <p class="footer-text">
+        Favor NO replicar NI aplicar leyes anticorrupción a este proyecto 🙏.
+      </p>
+      <p class="footer-text">
+        Las demandas son legales 🔨 pero NO pienso tener mascotas 🐈🐕.
+      </p>
+    </div>
+
+    <div class="footer-content">
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a
+            class="footer-link"
+            href="https://github.com/juandc"
+            target="blank"
+          >
+            Github
+          </a>
+        </li>
+        <li class="footer-item">
+          <a
+            class="footer-link"
+            href="https://twitter.com/fjuandc"
+            target="blank"
+          >
+            Twitter
+          </a>
+        </li>
+        <li class="footer-item">
+          <a
+            class="footer-link"
+            href="https://medium.com/@fjuandc"
+            target="blank"
+          >
+            Medium
+          </a>
+        </li>
+        <li class="footer-item">
+          <a
+            class="footer-link"
+            href="https://instagram.com/fjuandc"
+            target="blank"
+          >
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 -->
-          </article>
-    
-        </section>
-      </main>
- 
-    
-    <img src="./dibus/furgo-removebg-preview.png" alt="Furgo con regalos" class="minifurgo animate__animated animate__backInRight  animate__delay-3s animate__slow" >
-  
-      <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
-      <script src="./js/app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>
