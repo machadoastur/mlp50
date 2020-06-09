@@ -1,27 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>¡Me lo Pido v5.0!</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Probando maquetación
+        
+    </title>
 </head>
 <body>
-   <header class="cabezazo">
-       <h1 class="saludo">¡Bienvenido a mi página!</h1>
-        <h3 class="explica">Gracias por visitarme. Si quieres hacerme algún regalo, en esta página encontrarás algunos de los objetos que me interesan</h3>
-       <p class="font-italic text-white">Google me obliga a incluir un formulario de entrada con vuestro email. Yo no quería...</p>
-   </header>
-   <button id="btn1">¡Pincha!</button>
-    <div id="tablero"></div>
-    <h1 class="animate__animated animate__flash">An animated element</h1>
-
-
-    <!-- Scripts -->
-    <!-- Monadas-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182'></script>
-   <!--script general-->
-    <script src="index.js"></script>
+    <main role="application">
+        <header class="hero">
+          <article class="hero-info">
+            <h1 class="hero-title animate__animated animate__backInDown">
+            ¡Gracias por visitar mi página!
+            </h1>
+            <p class="hero-description animate__animated animate__backInDown animate__delay-1s">
+           Si queréis obsequiarme con algún regalo, aquí os muestro algunos objetos que me han llamado la atención.
+            </p>
+           
+          </article>
+        </header>
+    
+        <section class="appInfo animate__animated animate__backInRight animate__delay-2s">
+          <article class="privateInfo">
+    <!--        <h2 class="privateInfo-title">Información Privada y delicada 🤐</h2>-->
+            
+            <div id="loginFormUI" class="form-container ">
+              <p class="dialogo" >Google me exige que inicies sesión. Yo no quería🖖...</p>
+    
+              <form class="loginForm" name="loginForm">
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  placeholder="Correo Electronico"
+                  required
+                />
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  placeholder="Contraseña"
+                  required
+                />
+    
+                <div class="form-radioContainer">
+                  <input type="radio" name="isLoginOrSignup" id="radioIsLogin" value="isLogin" checked />
+                  <label for="radioIsLogin">Ya has estado.</label>
+    
+                  <input type="radio" name="isLoginOrSignup" id="radioIsSignup" value="isSignup" />
+                  <label for="radioIsSignup">No has estado nunca</label>
+                </div>
+    
+                <button id="btnLogin" class="button">Inicia la sesión</button>
+              </form>
+              <img src="./dibus/cajaret.png" alt="Furgo con regalos" class="refurgo" >
+            </div>
+    
+<!--
+            <div id="hiddenPrivateInfo">
+              <p class="loading">Cargando...</p>
+            </div>
+-->
+          </article>
+    
+        </section>
+      </main>
+ 
+    
+    <img src="./dibus/furgo-removebg-preview.png" alt="Furgo con regalos" class="minifurgo animate__animated animate__backInRight  animate__delay-3s animate__slow" >
+  
+      <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+      <script src="./js/app.js"></script>
 </body>
 </html>
